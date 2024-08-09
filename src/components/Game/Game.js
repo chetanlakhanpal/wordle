@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Form from './Form/Form';
-import Banner from './Banner/Banner';
+// import Banner from './Banner/Banner';
 
 import { sample, range } from '../../utils';
 import { WORDS } from '../../data';
@@ -23,8 +23,6 @@ function Game() {
   ];
 
   const [grid, setGrid] = useState(gridData);
-
-
 
   const updateList = (newValue) => {
     const result = checkGuess(newValue, answer);
